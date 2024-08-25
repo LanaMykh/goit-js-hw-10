@@ -1,18 +1,104 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+/* reset style */
+* {
+  box-sizing: border-box;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* reset style */
+
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* flex-direction: row; */
+  gap: 8px;
+  margin-top: 36px;
+}
+
+button {
+  width: 75px;
+  height: 40px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: row; */
+  gap: 10px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.value {
+  font-size: 40px;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+/* :root {
+  --font-family: "Montserrat", sans-serif;
+} */
